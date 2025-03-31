@@ -55,6 +55,22 @@ def reset_state():
 
 async def main():
     reset_state()  # Reset at the start of main
+    lines = []
+    print("Enter your prompt (Press Enter twice to stop):")
+
+    while True:
+        line = input()
+        if line == "":  # Stop input on empty line
+            break
+        lines.append(line)
+
+    query = "\n".join(lines)
+    default_query = """Find the ASCII values of characters in INDIA and then return sum of exponentials of those values. 
+                Then open a Microsoft paint window on the right side of screen, draw a 400x400 pixel size rectangle from 300,300 top left co-ordinate, then write the final result in a textbox"""
+    if not query:
+        print(f"No Prompt given, Using the default query  : {default_query}")
+        query = default_query
+                
     print("Starting main execution...")
     try:
         # Create a single MCP server connection
@@ -144,8 +160,6 @@ Examples:
 DO NOT include any explanations or additional text.
 Your entire response should be a single line starting with either FUNCTION_CALL: or FINAL_ANSWER:"""
 
-                query = """Find the ASCII values of characters in INDIA and then return sum of exponentials of those values. 
-                Then open a Microsoft paint window on the right side of screen, draw a 400x400 pixel size rectangle from 300,300 top left co-ordinate, then write the final result in a textbox"""
                 print("Starting iteration loop...")
                 
                 # Use global iteration variables

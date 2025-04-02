@@ -8,7 +8,7 @@ function debugLog(component, action, data = null) {
 const CONSTANTS = {
     MODEL: "gemini-2.0-flash",
     PROMPT_TEMPLATE: "Enhance this prompt to be more specific and effective. Include placeholders for customization where relevant. Return only the enhanced prompt without any explanations or header: ",
-    GEMINI_URL: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyCxAOJr0aqQcx_ZF7oajt-DQYy5SOybqV4"
+    GEMINI_URL: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=<Gemini api key>"
 };
 
 // Log when the service worker starts

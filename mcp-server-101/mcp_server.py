@@ -331,31 +331,6 @@ async def open_paint() -> dict:
             ]
         }
 
-@mcp.tool()
-async def send_email(content: str, email_id: str) -> dict:
-    """Send Email to the email-id"""
-    
-    try:
-        
-        
-        return {
-            "content": [
-                TextContent(
-                    type="text",
-                    text="Email Sent successfully"
-                )
-            ]
-        }
-    except Exception as e:
-        return {
-            "content": [
-                TextContent(
-                    type="text",
-                    text=f"Error Sending Email: {str(e)}"
-                )
-            ]
-        }
-
 # DEFINE RESOURCES
 
 # Add a dynamic greeting resource

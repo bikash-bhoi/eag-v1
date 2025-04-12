@@ -1,0 +1,17 @@
+[project]
+name = "chain-of-thoughts"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "google>=3.0.0",
+    "google-ai-generativelanguage==0.6.15",
+    "google-genai>=1.10.0",
+    "mcp[cli]>=1.6.0",
+    "pyautogui>=0.9.54",
+    "pygetwindow>=0.0.9",
+    "pywinauto>=0.6.9",
+    "rich>=14.0.0",
+]

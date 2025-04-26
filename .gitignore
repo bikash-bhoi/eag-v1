@@ -25,3 +25,9 @@ venv/
 # Ignore Node.js dependencies
 node_modules/
 **/node_modules/
+
+faiss_index/
+**/faiss_index/
+
+ipl_matches/
+**/ipl_matches/
